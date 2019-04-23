@@ -13,19 +13,20 @@ body{
 footer{
 	display: flex;
 	justify-content: center;
-	align-items: center;
-	padding-top:1em;
 
-	grid-column: 3 / span 12;
-	grid-row: 11 / 13;
+	grid-column: 3 / span 10;
+	grid-row: 11 / span 2;
 
 	border-top:0.2em solid black;
 	width:80%;
 }
 
-.info p{
+p{
 	text-align: center;
 	font-size:0.8em;
+	font-family: 'PT Sans', sans-serif;
+	margin-top:0.2em;
+	margin-bottom:0.2em;
 }
 
 .detail{
@@ -35,17 +36,15 @@ footer{
 	align-items: center;
 }
 
-.footer div{
-	margin:0.3em;
-}
-
 .mention a{
 	padding:0.5em;
+	font-family: 'PT Sans', sans-serif;
+	color:black;
 
 }
 
 .mention{
-	margin-top: 0.8em;
+	margin-bottom: 0.5em;
 }
 
 /* logo réseaux sociaux */
@@ -60,7 +59,6 @@ footer{
     height: 30px;
     background: black;
     color: aliceblue;
-    margin: 0.6px;
     border-radius: 50%;
     justify-content: center;
     align-items: center;
