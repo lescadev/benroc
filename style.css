@@ -1,0 +1,99 @@
+body{
+    margin: 0;
+    background-color: rgb(204, 204, 204);
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 8.3333333333333333333333333333333333333333333333333333vh);
+}
+
+/*pied de page*/
+
+footer{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-top:1em;
+
+	grid-column: 3 / span 12;
+	grid-row: 11 / 13;
+
+	border-top:0.2em solid black;
+	width:80%;
+}
+
+.info p{
+	text-align: center;
+	font-size:0.8em;
+}
+
+.detail{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.footer div{
+	margin:0.3em;
+}
+
+.mention a{
+	padding:0.5em;
+
+}
+
+.mention{
+	margin-top: 0.8em;
+}
+
+/* logo réseaux sociaux */
+
+.s-m{
+    position: relative;
+
+}
+.s-m a{
+    display: inline-flex;
+    width: 30px;
+    height: 30px;
+    background: black;
+    color: aliceblue;
+    margin: 0.6px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+    font-size: 24px;
+}
+.s-m a:hover{
+    background: grey;
+
+}
+.s-m a i{
+    transition: 0.4s all;
+}
+.s-m a:hover > i{
+    transform: scale(1.6) rotate(25deg);
+}
+
+
+/*Fleche scroll*/
+.scrollup {
+	width: 40px;
+	height: 40px;
+	position: fixed;
+	bottom: 50px;
+	right: 50px;
+	display: none;
+	color: white;
+	background-color: #3a3f51;
+	border: 1px solid #3a3f51;
+	font-size: 20px;
+	text-align: center;
+	line-height: 37px;
+}
+.scrollup:hover{
+	color: white;
+}
