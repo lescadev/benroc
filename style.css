@@ -5,7 +5,6 @@ body{
 .container{
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(12, 8.3333333333333333333333333333333333333333333333333333vh);
 }
 /*header*/
 .header {
@@ -27,9 +26,7 @@ body{
 footer{
 	display: flex;
 	justify-content: center;
-
 	grid-column: 3 / span 10;
-	grid-row: 11 / span 2;
 
 	border-top:0.2em solid black;
 	width:80%;
