@@ -1,0 +1,91 @@
+body{
+    margin: 0;
+    background-color: rgb(204, 204, 204);
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 8.3333333333333333333333333333333333333333333333333333vh);
+}
+/*header*/
+.header {
+	grid-column: 1/13;
+	text-align: center;
+	font-size: 2rem;
+}
+.nav {
+	grid-row: 2/3;
+	grid-column: 3/11;
+	display:flex;
+	justify-content: space-around;
+}
+.nav a {
+	font-size: 1.2rem;
+}
+/*pied de page*/
+
+footer{
+	display: flex;
+	justify-content: center;
+
+	grid-column: 3 / span 10;
+	grid-row: 11 / span 2;
+
+	border-top:0.2em solid black;
+	width:80%;
+}
+
+p{
+	text-align: center;
+	font-size:0.8em;
+	font-family: 'PT Sans', sans-serif;
+	margin-top:0.2em;
+	margin-bottom:0.2em;
+}
+
+.detail{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.mention a{
+	padding:0.5em;
+	font-family: 'PT Sans', sans-serif;
+	color:black;
+
+}
+
+.mention{
+	margin-bottom: 0.5em;
+}
+
+/* logo réseaux sociaux */
+
+.s-m{
+    position: relative;
+
+}
+.s-m a{
+    display: inline-flex;
+    width: 30px;
+    height: 30px;
+    background: black;
+    color: aliceblue;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+    font-size: 24px;
+}
+.s-m a:hover{
+    background: grey;
+
+}
+.s-m a i{
+    transition: 0.4s all;
+}
+.s-m a:hover > i{
+    transform: scale(1.6) rotate(25deg);
+}
