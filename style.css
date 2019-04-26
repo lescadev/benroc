@@ -10,16 +10,40 @@ body{
   
 }
 
+/*fleche*/
+
+.arrow{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    grid-column: 11 / span 2;
+    margin-bottom: 2em;
+}
+img {
+    margin-top: 50px;
+    width: 55px;
+    height: 55px;
+}
+
 /*header*/
 
-.header {
+header {
     left: 25px;
     position: fixed;
     text-align: left;
 
 }
 
+.titre p {
+    width: 100px;
+    text-align: center;
+    
+}
+
 .titre {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: transparent;
     width: 80px;
     height: 80px;
@@ -30,8 +54,12 @@ body{
     border-color: black;
 
 }
-.nav {
+nav {
     margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 350px;
     
 }
 
@@ -40,7 +68,13 @@ body{
     margin-bottom: 40px;
 }
 
-.button:hover {
+nav a {
+    text-decoration: none;
+    color: black;
+    margin-top-bottom: 5em;
+}
+
+nav a:hover {
     color: white;
     transition: color 0.5s ease;
 }
@@ -65,6 +99,16 @@ p{
 	margin-bottom:0.2em;
 }
 
+.info a{
+    text-decoration: none;
+    color: black;
+}
+
+.info a:hover{
+    color:white;
+    transition: color 0.5s ease;
+}
+
 .detail{
 	display: flex;
 	flex-direction: column;
@@ -73,10 +117,15 @@ p{
 }
 
 .mention a{
-	padding:0.5em;
-    color:black;
+	padding: 0.5em;
+    color: black;
     text-decoration: none;
 
+}
+
+.mention a:hover{
+    color: white;
+    transition: color 0.5s ease;
 }
 
 .mention{
@@ -122,7 +171,7 @@ p{
 #slider {
     position: relative;
 	grid-column: 3 / 11;
-	height: 725px;
+	height: 100vh;
     border-block-end: #606060;
 	border-spacing: 5px;
 
