@@ -1,41 +1,66 @@
 body{
     margin: 0;
-    background-color: rgb(204, 204, 204);
+	background-color: rgb(204, 204, 204);
+    font-family: 'opendyslexic';
+    background-image: url('');
 }
 .container{
     display: grid;
-    grid-template-columns: repeat(12, 1fr);
+	grid-template-columns: repeat(12, 1fr);
+  
 }
+
 /*header*/
+
 .header {
-	grid-column: 1/13;
-	text-align: center;
-	font-size: 2rem;
+    left: 25px;
+    position: fixed;
+    text-align: left;
+
+}
+
+.titre {
+    background-color: transparent;
+    width: 80px;
+    height: 80px;
+    color: black;
+    border-radius: 2px;
+    border-style: solid;
+    border-width: 0.06em;
+    border-color: black;
+
 }
 .nav {
-	grid-row: 2/3;
-	grid-column: 3/11;
-	display:flex;
-	justify-content: space-around;
+    margin-top: 80px;
+    
 }
-.nav a {
-	font-size: 1.2rem;
+
+.button {
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
+
+.button:hover {
+    color: white;
+    transition: color 0.5s ease;
+}
+
 /*pied de page*/
 
 footer{
-	display: flex;
+	display: fix;
 	justify-content: center;
-	grid-column: 3 / span 10;
 
-	border-top:0.2em solid black;
+	grid-column: 3 / span 10;
+	grid-row: 11 / span 2;
+
+	border-top:0.1em solid black;
 	width:80%;
 }
 
 p{
 	text-align: center;
 	font-size:0.8em;
-	font-family: 'PT Sans', sans-serif;
 	margin-top:0.2em;
 	margin-bottom:0.2em;
 }
@@ -49,13 +74,18 @@ p{
 
 .mention a{
 	padding:0.5em;
-	font-family: 'PT Sans', sans-serif;
-	color:black;
+    color:black;
+    text-decoration: none;
 
 }
 
 .mention{
-	margin-bottom: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+.info {
+    margin-top: 20px;
+    margin-bottom: 10px;
 }
 
 /* logo réseaux sociaux */
@@ -86,3 +116,103 @@ p{
 .s-m a:hover > i{
     transform: scale(1.6) rotate(25deg);
 }
+
+/* Slider */
+
+#slider {
+    position: relative;
+	grid-column: 3 / 11;
+	height: 725px;
+    border-block-end: #606060;
+	border-spacing: 5px;
+
+}
+  
+.slide {
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: cover;
+    flex-direction: column;
+}
+  
+.fleche-gauche,
+.fleche-droite {
+    color: #606060;
+    position: absolute;
+    top: 50%;
+    font-size: 2em;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+  
+.fleche-gauche {
+    left: 15px;
+    color: rgb(210, 210, 210);
+}
+  
+.fleche-droite {
+    right: 15px;
+    color: rgb(210, 210, 210);
+}
+  
+.en-savoir-plus,
+.fleche {
+    text-decoration: none;
+    padding: 6px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 1px;
+    color: rgb(210, 210, 210);
+    font-size: 80%;
+    
+}
+  
+.slide .en-savoir-plus {
+    opacity: inherit;
+}
+  
+.slider-title {
+    padding: 6px;
+    letter-spacing: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 1px;
+    
+}
+
+.presta {
+    grid-column: 3 / 11;
+    grid-row-start: 4;
+    background-color: rgb(234, 234, 234);
+    text-align: center;
+    letter-spacing: 2px;
+}
+/* description */
+
+.description {
+    margin-top: 50px;
+    margin-bottom: 150px;
+    grid-column: 4 / 10;
+    
+}
+.para1 {
+    margin: 50px;
+}
+
+.para {
+    margin: 50px;
+}
+
+
+@font-face {
+    font-family: 'opendyslexic';
+      src: url('OpenDyslexic-Regular.otf');
+      font-style: normal;
+      font-weight: normal;
+  } 
