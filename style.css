@@ -1,7 +1,7 @@
 body{
     margin: 0;
-	background-color: rgb(204, 204, 204);
-    font-family: 'opendyslexic';
+	background-color: rgb(244, 244, 244);
+    font-family: 'PT Sans', sans-serif;
     background-image: url('');
 }
 .container{
@@ -71,11 +71,10 @@ nav {
 nav a {
     text-decoration: none;
     color: black;
-    margin-top-bottom: 5em;
 }
 
 nav a:hover {
-    color: white;
+    color: red;
     transition: color 0.5s ease;
 }
 
@@ -245,23 +244,18 @@ p{
 /* description */
 
 .description {
-    margin-top: 50px;
-    margin-bottom: 150px;
     grid-column: 4 / 10;
-    
+    height: 100vh;
 }
 .para1 {
-    margin: 50px;
+    grid-column: 4 / 10;
+    margin: 50x;
+    text-align: justify;
 }
 
-.para {
+.para2 {
+    grid-column: 4 / 10;
     margin: 50px;
+    text-align: justify;
 }
 
-
-@font-face {
-    font-family: 'opendyslexic';
-      src: url('OpenDyslexic-Regular.otf');
-      font-style: normal;
-      font-weight: normal;
-  } 
