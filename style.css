@@ -19,7 +19,7 @@ body{
     grid-column: 11 / span 2;
     margin-bottom: 2em;
 }
-img {
+.arrow a img {
     margin-top: 50px;
     width: 55px;
     height: 55px;
