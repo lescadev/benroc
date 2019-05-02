@@ -29,7 +29,7 @@ class Slide {
     launchInterval() {
       this.theInterval = setInterval(() =>{
         this.slideSuivant()
-      } ,1000);
+      } ,4000);
       console.log(this.theInterval);
       return this.theInterval;
     }
