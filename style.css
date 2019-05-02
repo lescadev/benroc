@@ -1,7 +1,7 @@
 body{
     margin: 0;
-	background-color: rgb(244, 244, 244);
-    font-family: 'PT Sans', sans-serif;
+	background-color: rgb(204, 204, 204);
+  font-family: 'PT Sans', 'sans-serif';
     background-image: url('');
 }
 .container{
@@ -52,7 +52,14 @@ header {
     border-style: solid;
     border-width: 0.06em;
     border-color: black;
-
+    text-align: center;
+}
+.titre .logo a{
+    text-decoration: none;  
+    color: black;
+}
+.titre a{
+    text-align: center;
 }
 nav {
     margin-top: 80px;
