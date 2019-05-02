@@ -14,14 +14,16 @@ class Slide {
       $(this.slides).css("display", "none");
       $(this.slides[this.sIndex]).css("display", "flex");
     }
+
     slidePrecedent() {
       this.sIndex--;
       if (this.sIndex < 0) {
-        this.sIndex = 3;
+        this.sIndex = 7;
       }
       $(this.slides).css("display", "none");
       $(this.slides[this.sIndex]).css("display", "flex");
     }
+
     launchInterval() {
       this.theInterval = setInterval(() =>{
         this.slideSuivant()
