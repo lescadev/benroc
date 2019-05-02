@@ -23,16 +23,15 @@ class Slide {
       $(this.slides).css("display", "none");
       $(this.slides[this.sIndex]).css("display", "flex");
     }
-
+    pause() {
+      clearInterval(this.theInterval);
+    }
     launchInterval() {
       this.theInterval = setInterval(() =>{
         this.slideSuivant()
-      } ,7000);
+      } ,4000);
       console.log(this.theInterval);
       return this.theInterval;
-    }
-    pause() {
-      clearInterval(this.theInterval);
     }
   }
   
