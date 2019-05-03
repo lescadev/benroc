@@ -48,6 +48,7 @@ header {
 .titre .logo a{
     text-decoration: none;  
     color: black;
+    display: block;
 }
 .titre a{
     text-align: center;
@@ -154,6 +155,7 @@ p{
     bottom: 0;
     background-size: cover;
     flex-direction: column;
+    background-position: center center;
 }
   
 .fleche-gauche,
