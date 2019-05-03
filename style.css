@@ -4,7 +4,7 @@ html {
 
 body{
     margin: 0;
-	background-color: rgb(204, 204, 204);
+	background-color: rgb(244, 244, 244);
   font-family: 'PT Sans', 'sans-serif';
     background-image: url('');
 }
@@ -191,8 +191,10 @@ p{
 .fleche-droite {
     color: #606060;
     position: absolute;
+    width: 20px;
+    height: 50px;
     top: 50%;
-    font-size: 2em;
+    font-size: 50px;
     display: flex;
     justify-content: space-between;
     transform: translateY(-50%);
@@ -218,9 +220,15 @@ p{
     border-radius: 1px;
     color: rgb(210, 210, 210);
 }
-.en-savoir-plus{
-    font-size: 13px;
-} 
+
+.fleche{
+    padding-top: 11px;
+    font-size: 30px;
+}
+.fleche:hover{
+    color: #ffffff;
+}
+
 .slide .en-savoir-plus {
     opacity: inherit;
 }
