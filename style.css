@@ -14,21 +14,6 @@ body{
   
 }
 
-/*fleche*/
-
-.arrow{
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    grid-column: 11 / span 2;
-    margin-bottom: 2em;
-}
-.arrow a img {
-    margin-top: 50px;
-    width: 55px;
-    height: 55px;
-}
-
 /*header*/
 
 header {
@@ -181,7 +166,7 @@ p{
 
 #slider {
     position: relative;
-	grid-column: 3 / 11;
+	grid-column: 3 / 13;
 	height: 100vh;
     border-block-end: #606060;
 	border-spacing: 5px;
@@ -216,11 +201,13 @@ p{
 .fleche-gauche {
     left: 15px;
     color: rgb(210, 210, 210);
+    font-size: 25px;
 }
   
 .fleche-droite {
     right: 15px;
     color: rgb(210, 210, 210);
+    font-size: 25px;
 }
   
 .en-savoir-plus,
@@ -230,10 +217,10 @@ p{
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: 1px;
     color: rgb(210, 210, 210);
-    font-size: 80%;
-    
 }
-  
+.en-savoir-plus{
+    font-size: 13px;
+} 
 .slide .en-savoir-plus {
     opacity: inherit;
 }
