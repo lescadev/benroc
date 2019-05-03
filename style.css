@@ -23,6 +23,9 @@ header {
 }
 .headerr{
     grid-column: 1/3;
+    grid-row: 1 / 100;
+    background-color: rgb(199, 199, 199);
+    border-right: 1px solid black;
 }
 
 .titre p {
@@ -221,7 +224,8 @@ p{
 
 .description {
     margin-top: 70px;
-    grid-column: 3 / 10;
+    margin-left: 5vw;
+    grid-column: 3 / 13;
     height: 100vh;
     text-align: left;
 }
