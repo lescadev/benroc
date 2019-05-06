@@ -139,10 +139,10 @@ p{
 
 #slider {
     position: relative;
-	    grid-column: 3 / 13;
-	    height: 100vh;
+	grid-column: 3 / 13;
+	height: 100vh;
     border-block-end: #606060;
-	    border-spacing: 5px;
+	border-spacing: 5px;
 
 }
   
