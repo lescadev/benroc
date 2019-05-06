@@ -1,0 +1,163 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+	background-color: rgb(244, 244, 244);
+    font-family: 'PT Sans', 'sans-serif';
+    background-image: url('');
+}
+.container{
+    display: grid;
+	grid-template-columns: repeat(12, 1fr);
+}
+
+/*header*/
+
+header {
+    left: 25px;
+    position: fixed;
+    text-align: left;
+}
+.headerr{
+    grid-column: 1/3;
+    grid-row: 1 / 100;
+    background-color: rgb(199, 199, 199);
+    border-right: 1px solid black;
+}
+
+.titre p {
+    width: 100px;
+    text-align: center;
+    
+}
+
+.titre {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    width: 80px;
+    height: 80px;
+    color: black;
+    border-radius: 2px;
+    border-style: solid;
+    border-width: 0.06em;
+    border-color: black;
+    text-align: center;
+}
+.titre .logo a{
+    text-decoration: none;  
+    color: black;
+    display: block;
+}
+.titre a{
+    text-align: center;
+}
+nav {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 350px;
+}
+
+.button {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+nav a:hover {
+    color: red;
+    transition: color 0.5s ease;
+}
+
+/**Footer**/
+footer{
+	display: fix;
+	justify-content: center;
+
+	grid-column: 3 / span 9;
+	grid-row: 11 / span 2;
+}
+
+p{
+	text-align: center;
+	font-size:0.8em;
+	margin-top:0.2em;
+	margin-bottom:0.2em;
+}
+
+.info a{
+    text-decoration: none;
+    color: black;
+}
+
+.info a:hover{
+    color:red;
+    transition: color 0.5s ease;
+}
+
+.detail{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.mention a{
+	padding: 0.3em;
+    color: black;
+    text-decoration: none;
+    font-size:0.9em;
+
+}
+
+.mention a:hover{
+    color: red;
+    transition: color 0.5s ease;
+}
+
+.mention{
+    margin-bottom: 0.2em;
+}
+
+.info {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+
+/* description */
+
+.description {
+    margin-top: 70px;
+    margin-left: 5vw;
+    grid-column: 3 / 13;
+    height: 100vh;
+    text-align: left;
+}
+
+.titre_desc {
+    font-size: 40px;
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.para1 p {
+    font-size: 15px;
+    text-align: left;
+    margin-bottom: 50px;
+}
+
+.para2 p {
+    font-size: 15px;
+    text-align: left;
+}   
